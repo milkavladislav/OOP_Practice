@@ -14,6 +14,8 @@ public class Main {
         System.out.println(MyOrder.toString());
         Contact Vlad = new Contact("Vlad", "Milka", "Poltava");
         System.out.println(Vlad.toString());
+        CloseContact Brother = new CloseContact("Bogdan", "Milka", "Poltava", "03.12.2000", "brother");
+        System.out.println(Brother.toString());
     }
     
 }
