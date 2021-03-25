@@ -1,6 +1,6 @@
 package domain;
 
-public class Order {
+public class Order implements PrintObject{
     private final int DEFOULT_TYPE = 1;
     private final String DEFOULT_DATE_TIME = "01.01.2000 00:00";
     private int id;

@@ -1,6 +1,6 @@
 package domain;
 
-public class Contact {
+public class Contact implements PrintObject{
     static int ID = 1;
     
     private int id;

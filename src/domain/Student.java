@@ -1,6 +1,6 @@
 package domain;
 
-public class Students{
+public class Student implements PrintObject{
     private final int DEFOULT_MARK = 2;
     private final String DEFOULT_DISCIPLINE = "Math";
     private final String DEFOULT_TEACHER_NAME = "Oleg";
@@ -14,7 +14,7 @@ public class Students{
     private int mark;
     private String teacherName;
 
-    public Students(int id, String firstName, String lastName, int group, String department) {
+    public Student(int id, String firstName, String lastName, int group, String department) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -91,7 +91,7 @@ public class Students{
 
     @Override
     public String toString() {
-        return "Students id: " + id +
+        return "Student id: " + id +
                 ", firstName: " + firstName +
                 ", lastName: " + lastName +
                 ", group: " + group +
