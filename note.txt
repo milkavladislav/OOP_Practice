@@ -1,0 +1,5 @@
+
+Student id: 1000, firstName: Vladislav, lastName: Milka, group: 40, department: Programmer, discipline: Math, mark: 2, teacher name: Oleg
+Order id: 100, name: Vladislav, courier: Diana, date and time: 01.01.2000 00:00, type: 1
+Contacts id: 1, firstName: Bogdan, lastName: Ivanenko, address Poltava
+Contacts id: 2, firstName: Bogdan, lastName: Ivanenko, address Potava, birthday: 19.12.2019, family connection: Brother
