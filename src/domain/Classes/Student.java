@@ -1,4 +1,7 @@
-package domain;
+package domain.Classes;
+
+import domain.PrintObject;
+
 
 public class Student implements PrintObject{
     private final int DEFOULT_MARK = 2;

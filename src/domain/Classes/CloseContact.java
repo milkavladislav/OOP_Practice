@@ -1,4 +1,4 @@
-package domain;
+package domain.Classes;
 
 public class CloseContact extends Contact {
 

@@ -1,4 +1,6 @@
-package domain;
+package domain.Classes;
+
+import domain.PrintObject;
 
 public class Contact implements PrintObject{
     static int ID = 1;

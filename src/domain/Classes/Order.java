@@ -1,4 +1,7 @@
-package domain;
+package domain.Classes;
+
+import domain.PrintObject;
+
 
 public class Order implements PrintObject{
     private final int DEFOULT_TYPE = 1;
