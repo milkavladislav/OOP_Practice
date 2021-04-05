@@ -1,14 +1,15 @@
 package domain.Classes;
 
-import domain.PrintObject;
+import domain.Interfaces.PrintObject;
+import java.io.Serializable;
 
 
-public class Student implements PrintObject{
+public class Student implements PrintObject, Serializable {
     private final int DEFOULT_MARK = 2;
     private final String DEFOULT_DISCIPLINE = "Math";
     private final String DEFOULT_TEACHER_NAME = "Oleg";
-    
-    private int id;
+
+    private long id;
     private String firstName;
     private String lastName;
     private int group;
@@ -17,8 +18,7 @@ public class Student implements PrintObject{
     private int mark;
     private String teacherName;
 
-    public Student(int id, String firstName, String lastName, int group, String department) {
-        this.id = id;
+    public Student(String firstName, String lastName, int group, String department) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.group = group;
@@ -26,14 +26,15 @@ public class Student implements PrintObject{
         this.discipline = DEFOULT_DISCIPLINE;
         this.mark = DEFOULT_MARK;
         this.teacherName = DEFOULT_TEACHER_NAME;
+        setId();
     }
 
-    public int getId() {
+    public long getId(){
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    private void setId(){
+        this.id = System.currentTimeMillis();
     }
 
     public String getFirstName() {

@@ -1,31 +1,34 @@
 package domain.Classes;
 
-import domain.PrintObject;
+import domain.Interfaces.PrintObject;
+
+import java.io.Serializable;
 
 
-public class Order implements PrintObject{
+public class Order implements PrintObject, Serializable {
     private final int DEFOULT_TYPE = 1;
     private final String DEFOULT_DATE_TIME = "01.01.2000 00:00";
-    private int id;
+
+    private long id;
     private String name;
     private String courier;
     private String dateTime;
     private int type;
 
-    public Order(int id, String name, String courier){
-        this.id = id;
+    public Order(String name, String courier){
         this.name = name;
         this.courier = courier;
         this.dateTime = DEFOULT_DATE_TIME;
         this.type = DEFOULT_TYPE;
+        setId();
     }
 
-    public int getId() {
+    public long getId(){
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    private void setId(){
+        this.id = System.currentTimeMillis();
     }
 
     public String getName() {

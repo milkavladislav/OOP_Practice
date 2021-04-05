@@ -1,15 +1,17 @@
 package domain.Collections;
 
-import domain.Classes.CloseContact;
 import domain.Classes.Contact;
+import domain.Classes.Order;
+import domain.Interfaces.PrintObject;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class ContactCollection {
+public class ContactCollection implements PrintObject, Serializable {
     private ArrayList<Contact> collection = new ArrayList<Contact>();
 
-    public void addOrder(Contact contact){
+    public void addContact(Contact contact){
         collection.add(contact);
     }
 
@@ -27,5 +29,14 @@ public class ContactCollection {
 
     public void sortByLastName(){
         Collections.sort(collection, Comparator.comparing(Contact::getLastName));
+    }
+
+    @Override
+    public String toString() {
+        String string = new String("Collection of contacts :\n");
+        for(Contact contact : collection){
+            string += contact.toString() + "\n";
+        }
+        return string;
     }
 }

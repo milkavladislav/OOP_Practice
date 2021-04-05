@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="domain.GUI.StudentForm">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <splitpane id="21d64">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16245708"/>
+          <foreground color="-16245708"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="d7365" layout-manager="GridLayoutManager" row-count="9" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties>
+              <background color="-16245708"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="2790a" class="javax.swing.JTextField" binding="FirstNameTextField">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16245708"/>
+                  <foreground color="-262152"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="61ac0" class="javax.swing.JTextField" binding="DisciplineTextField">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16245708"/>
+                  <foreground color="-262152"/>
+                </properties>
+              </component>
+              <component id="805ff" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-262152"/>
+                  <text value="Optional field"/>
+                </properties>
+              </component>
+              <component id="58c54" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-262152"/>
+                  <text value="Required field"/>
+                </properties>
+              </component>
+              <component id="6294a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-262152"/>
+                  <text value="Discipline"/>
+                </properties>
+              </component>
+              <component id="1f81c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-262152"/>
+                  <text value="Mark"/>
+                </properties>
+              </component>
+              <component id="b0f52" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-262152"/>
+                  <text value="Group"/>
+                </properties>
+              </component>
+              <component id="aebc6" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-262152"/>
+                  <text value="FirstName"/>
+                </properties>
+              </component>
+              <component id="73b41" class="javax.swing.JComboBox" binding="MarkComboBox">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16245708"/>
+                  <editable value="false"/>
+                  <foreground color="-262152"/>
+                </properties>
+              </component>
+              <component id="1f5d0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-262152"/>
+                  <text value="LastName"/>
+                </properties>
+              </component>
+              <component id="b4ede" class="javax.swing.JTextField" binding="LastNameTextField">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16245708"/>
+                  <foreground color="-262152"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="f3d2a" class="javax.swing.JSpinner" binding="GroupSpinner">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="ab59" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-262152"/>
+                  <text value="Departament"/>
+                </properties>
+              </component>
+              <component id="27299" class="javax.swing.JTextField" binding="DepartmentTextField">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16245708"/>
+                  <foreground color="-262152"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="52576" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-262152"/>
+                  <text value="TeacherName"/>
+                </properties>
+              </component>
+              <component id="8ab39" class="javax.swing.JTextField" binding="TeacherNameTextField">
+                <constraints>
+                  <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16245708"/>
+                  <foreground color="-262152"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="885b4" layout-manager="GridLayoutManager" row-count="10" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="5" left="5" bottom="5" right="5"/>
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties>
+              <background color="-16245708"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="625f5" class="javax.swing.JButton" binding="addOrderButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12565686"/>
+                  <foreground color="-262152"/>
+                  <text value="Add Student"/>
+                </properties>
+              </component>
+              <component id="53675" class="javax.swing.JButton" binding="sortByNameButton" default-binding="true">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12565686"/>
+                  <foreground color="-262152"/>
+                  <text value="Sort by first name"/>
+                </properties>
+              </component>
+              <component id="50090" class="javax.swing.JButton" binding="sortByIdButton" default-binding="true">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12565686"/>
+                  <foreground color="-262152"/>
+                  <text value="Sort by Id"/>
+                </properties>
+              </component>
+              <component id="ae474" class="javax.swing.JButton" binding="sortByCourierButton" default-binding="true">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12565686"/>
+                  <foreground color="-262152"/>
+                  <text value="Sort by last name"/>
+                </properties>
+              </component>
+              <component id="3068" class="javax.swing.JButton" binding="sortByDepartmentButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12565686"/>
+                  <foreground color="-262152"/>
+                  <text value="Sort by department"/>
+                </properties>
+              </component>
+              <component id="232b3" class="javax.swing.JButton" binding="sortByGroupButton" default-binding="true">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12565686"/>
+                  <foreground color="-262152"/>
+                  <text value="Sort by group"/>
+                </properties>
+              </component>
+              <component id="402ed" class="javax.swing.JButton" binding="showCollectionButton" default-binding="true">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12565686"/>
+                  <foreground color="-262152"/>
+                  <text value="Show collection"/>
+                </properties>
+              </component>
+              <component id="7289b" class="javax.swing.JButton" binding="saveToFileButton" default-binding="true">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12565686"/>
+                  <foreground color="-262152"/>
+                  <text value="Save to file"/>
+                </properties>
+              </component>
+              <component id="48d68" class="javax.swing.JButton" binding="serializableCollectionButton" default-binding="true">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12565686"/>
+                  <foreground color="-262152"/>
+                  <text value="Serializable collection"/>
+                </properties>
+              </component>
+              <component id="98bdb" class="javax.swing.JButton" binding="deserializableCollectionButton" default-binding="true">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12565686"/>
+                  <foreground color="-262152"/>
+                  <text value="Deserializable collection"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </splitpane>
+    </children>
+  </grid>
+</form>

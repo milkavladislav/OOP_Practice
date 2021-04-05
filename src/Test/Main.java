@@ -1,30 +1,49 @@
 package Test;
 
-import domain.Classes.*;
-import domain.Collections.*;
+import domain.GUI.MainMenuForm;
 
 
-import java.util.Scanner;
-
+import javax.swing.*;
 
 
 public class Main {
 
     
     public static void main(String[] args) {
-        OrderCollection orderCollection = new OrderCollection();
+        final  String nameOfFile = "collections.txt";
+//        try {
+//            FileOutputStream fileOutputStream = new FileOutputStream( nameOfFile );
+//            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+//
+//            StudentCollection studentCollection = new StudentCollection();
+//            studentCollection.addStudent(new Student("Vlad", "Milka", 34, "Math"));
+//            objectOutputStream.writeObject(studentCollection);
+//            OrderCollection orderCollection = new OrderCollection();
+//            orderCollection.addOrder(new Order("FirstOrder", "Dima"));
+//            objectOutputStream.writeObject(orderCollection);
+//            ContactCollection contactCollection = new ContactCollection();
+//            contactCollection.addContact(new Contact("Vlad", "Milka", "Poltava"));
+//            objectOutputStream.writeObject(contactCollection);
+//            CloseContactCollection closeContactCollection = new CloseContactCollection();
+//            closeContactCollection.addContact(new CloseContact("Vlad", "Milka", "Poltava", "06.06.2003", "Father"));
+//            objectOutputStream.writeObject(closeContactCollection);
+//
+//            objectOutputStream.close();
+//            objectOutputStream.close();
+//
+//        } catch (IOException exception) {
+//            exception.printStackTrace();
+//        }
 
-        orderCollection.addOrder(new Order(4, "FFF", "Aaa"));
-        orderCollection.addOrder(new Order(1, "GGG", "ZZZ"));
-        orderCollection.addOrder(new Order(3, "CCC", "YYY"));
-        orderCollection.addOrder(new Order(2, "JJJ", "BBB"));
 
-        orderCollection.sortById();
-        System.out.println(orderCollection.toString());
-        orderCollection.sortByName();
-        System.out.println(orderCollection.toString());
-        orderCollection.sortByCourier();
-        System.out.println(orderCollection.toString());
+        JFrame mainWindow = new JFrame("PRACTICE OOP");
+        mainWindow.setContentPane(new MainMenuForm().mainPanel);
+        mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        mainWindow.pack();
+        mainWindow.setVisible(true);
+        mainWindow.setBounds(200,200,400,300);
+
+
 
     }
     

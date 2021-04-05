@@ -1,5 +1,20 @@
+Collection of orders :
+Order id: 1617336478135, name: Vkad, courier: Vldjf, date and time: 01.01.2000 00:00, type: 1
+Order id: 1617336502884, name: Vlad, courier: Kfkj, date and time: 93.94.95, type: 2
 
-Student id: 1000, firstName: Vladislav, lastName: Milka, group: 40, department: Programmer, discipline: Math, mark: 2, teacher name: Oleg
-Order id: 100, name: Vladislav, courier: Diana, date and time: 01.01.2000 00:00, type: 1
-Contacts id: 1, firstName: Bogdan, lastName: Ivanenko, address Poltava
-Contacts id: 2, firstName: Bogdan, lastName: Ivanenko, address Potava, birthday: 19.12.2019, family connection: Brother
+Collection of contacts :
+Contacts id: 1617340776069, firstName: yeje5j, lastName: 5j5j, address 5yj5j
+Contacts id: 1617340784421, firstName: 5yj5j, lastName: 5j5yj, address 5yj5j
+
+Collection of orders :
+Order id: 1617340827827, name: rgherg, courier: ergerg, date and time: 01.01.2000 00:00, type: 1
+Order id: 1617340839674, name: rgerg, courier: ergreger, date and time: 01.01.2000 00:00, type: 1
+
+Collection of students :
+Student id: 1617604621379, firstName: gergb, lastName: ergerg, group: 1, department: erge, discipline: Math, mark: 1, teacher name: Oleg
+
+Collection of close contacts :
+Contacts id: 1617606696036, firstName: teht, lastName: thtr, address thrr, birthday: rhthr, family connection: Daughter
+Contacts id: 1617606711228, firstName: ergerg, lastName: ergerg, address ergerg, birthday: egerg, family connection: Mother
+Contacts id: 1617606722989, firstName: ergerg, lastName: ergerg, address erger, birthday: ytjyt, family connection: Daughter
+

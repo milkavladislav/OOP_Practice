@@ -1,11 +1,11 @@
 package domain.Classes;
 
-import domain.PrintObject;
+import domain.Interfaces.PrintObject;
+import java.io.Serializable;
 
-public class Contact implements PrintObject{
-    static int ID = 1;
+public class Contact implements PrintObject, Serializable {
     
-    private int id;
+    private long id;
     private String firstName;
     private String lastName;
     private String address;
@@ -17,13 +17,12 @@ public class Contact implements PrintObject{
         setId();
     }
 
-    public int getId(){
+    public long getId(){
         return id;
     }
 
     private void setId(){
-        this.id = ID;
-        ID++;
+        this.id = System.currentTimeMillis();
     }
 
     public String getFirstName(){

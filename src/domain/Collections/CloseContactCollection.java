@@ -1,11 +1,14 @@
 package domain.Collections;
 
 import domain.Classes.CloseContact;
+import domain.Classes.Contact;
+import domain.Interfaces.PrintObject;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class CloseContactCollection {
+public class CloseContactCollection implements PrintObject, Serializable {
     private ArrayList<CloseContact> collection = new ArrayList<CloseContact>();
 
     public void addContact(CloseContact closeContact){
@@ -28,7 +31,16 @@ public class CloseContactCollection {
         Collections.sort(collection, Comparator.comparing(CloseContact::getLastName));
     }
 
-    public void sortByFamilyConection(){
+    public void sortByFamilyConnection(){
         Collections.sort(collection, Comparator.comparing(CloseContact::getFamilyConnection));
+    }
+
+    @Override
+    public String toString() {
+        String string = new String("Collection of close contacts :\n");
+        for(Contact contact : collection){
+            string += contact.toString() + "\n";
+        }
+        return string;
     }
 }

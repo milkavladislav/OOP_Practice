@@ -1,13 +1,13 @@
 package domain.Collections;
 
 import domain.Classes.Order;
-import domain.Classes.Student;
-
+import domain.Interfaces.PrintObject;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class OrderCollection {
+public class OrderCollection implements PrintObject, Serializable {
     private ArrayList<Order> collection = new ArrayList<Order>();
 
     public void addOrder(Order order){

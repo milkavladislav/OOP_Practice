@@ -1,6 +1,8 @@
 package domain.Classes;
 
-public class CloseContact extends Contact {
+import java.io.Serializable;
+
+public class CloseContact extends Contact implements Serializable {
 
     private String birthday;
     private String familyConnection;
